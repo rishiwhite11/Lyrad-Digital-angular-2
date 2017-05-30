@@ -1,0 +1,14 @@
+.nav li:HOVER {
+	background-color: green;
+	
+}
+.dropdown{
+	cursor: pointer;
+}
+.navbar{
+	margin-bottom: 2rem;
+}
+
+.dropdown-menu li a:HOVER{
+	background-color: gray;
+}

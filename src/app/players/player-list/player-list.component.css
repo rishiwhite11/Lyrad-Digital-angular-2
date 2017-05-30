@@ -1,0 +1,27 @@
+.table-striped tr {
+	color: #FFF;
+	cursor: pointer;
+}
+
+.table-striped thead tr{
+	background: #232;
+	
+}
+
+.table-striped tbody tr:NTH-OF-TYPE(odd) {
+	background: #94163F;
+	
+}
+
+.table-striped tbody tr:NTH-OF-TYPE(odd):HOVER {
+	background: #AF163F;
+}
+
+.table-striped tbody tr:NTH-OF-TYPE(even) {
+	background: #FFCA5B;
+	color: #232;
+}
+
+.table-striped tbody tr:NTH-OF-TYPE(even):HOVER {
+	background: #FFDC5B;
+}

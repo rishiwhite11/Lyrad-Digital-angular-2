@@ -1,0 +1,26 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Angular 2</a>
+    </div>
+    <ul class="nav navbar-nav">
+     	<li class="nav-item" [ngClass]="{'active' : isActive('/')}">
+     		<a class="nav-link" [routerLink]="['/']">Home</a>
+     	</li>
+     	<li class="nav-item" [ngClass]="{'active' : isActive('/players')}">
+     		<a class="nav-link" [routerLink]="['/players']">Players</a>
+     	</li>
+     	<li class="nav-item" [ngClass]="{'active' : isActive('/teams')}">
+     		<a class="nav-link" [routerLink]="['/teams']">Teams</a>
+     	</li>
+     	<li class="dropdown" [ngClass]="{'active': isActive('/register/player')}">
+        <a class="dropdown-toggle" data-toggle="dropdown">Register
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a [routerLink]="['/register/player']">Players</a></li>
+          <li><a href="#">Teams</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
